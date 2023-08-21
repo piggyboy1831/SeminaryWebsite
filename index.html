@@ -10,7 +10,7 @@
             width: 100%;   /* Full width */
             display: block;  /* Display as block to take the full width */
             margin: 5px 0;  /* Some margin on top and bottom for spacing */
-            padding: 10px;  /* Some padding for better appearance */
+            padding: 10px 20px 10px 10px;  /* Some padding for better appearance */
             text-align: center;  /* Center the button text */
             background-color: #007BFF;  /* Button color */
             color: white;  /* Text color */
@@ -27,11 +27,13 @@
 <body>
     <!-- List of 100 buttons -->
     <div>
-        <!-- This is a loop for demonstration. In a real HTML file, you'd have to copy the anchor tag 100 times or use a scripting language to loop. -->
-        <!-- Replace the href value with the desired URLs. -->
-        <?php for ($i = 1; $i <= 100; $i++): ?>
-            <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
-        <?php endfor; ?>
+       
+        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
+        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
+        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
+        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
+        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
+       
     </div>
 </body>
 </html>
