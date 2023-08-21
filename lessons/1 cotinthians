@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpage Title</title>
+    <style>
+        /* Style for the back button */
+        .back-button {
+            width: 100%;
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the paragraph */
+        .content-text {
+            margin: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button to go back to the main page (index.html) -->
+    <a class="back-button" href="../index.html">Back to Main Page</a>
+
+    <!-- Paragraph of text -->
+    <div class="content-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+    </div>
+</body>
+</html>
