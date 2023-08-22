@@ -13,11 +13,11 @@
         .button-container {
             display: flex;
             width: calc(100% - 20px);   /* Full width minus padding */
-            border-top: 1px solid black;
+            border-top: 1px solid #446E7A;
         }
 
         .button-container.first {
-            border-top: 1px solid black;
+            border-top: 1px solid #446E7A;
         }
 
         /* Style for the individual buttons */
@@ -29,11 +29,12 @@
             border: none;  /* No border */
             cursor: pointer;  /* Change cursor to pointer on hover */
             text-decoration: none;  /* Remove underline */
+            box-sizing: border-box; /* To include border and padding in element's total width and height */
         }
 
         .button-main {
             flex: 80;  /* Take 80% of the container width */
-            border-right: 1px solid black;
+            border-right: 1px solid #446E7A;
         }
 
         .button-side {
@@ -41,24 +42,24 @@
         }
 
         .button-main:hover, .button-side:hover {
-            background-color: #446E7A;  /* Change color on hover */
+            background-color: #6A9BAD;  /* Lighter shade for hover */
         }
 
         /* Styles for the dropdown */
         details {
-            border: 1px solid black;
+            border: 1px solid #446E7A;
             margin: 10px 0;
         }
 
         summary {
             padding: 10px;
-            background-color: #4D7C8A;
+            background-color: #2C5A70;  /* Darker shade for distinction */
             color: white;
             cursor: pointer;
         }
 
         summary:hover {
-            background-color: #446E7A;
+            background-color: #1B4079;  /* Darker shade on hover */
         }
 
     </style>
