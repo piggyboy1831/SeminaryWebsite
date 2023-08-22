@@ -10,9 +10,8 @@
         }
         /* Style for the button */
         .full-width-button {
-            width: calc(100% - 20px);   /* Full width */
+            width: calc(100% - 20px);   /* Full width minus padding */
             display: block;  /* Display as block to take the full width */
-            /* margin: 5px 0;   Some margin on top and bottom for spacing */
             padding: 10px;  /* Some padding for better appearance */
             text-align: center;  /* Center the button text */
             background-color: #967D69;  /* Button color */
@@ -22,22 +21,49 @@
             cursor: pointer;  /* Change cursor to pointer on hover */
             text-decoration: none;  /* Remove underline */
         }
-        
+
         .full-width-button:hover {
             background-color: #7E6959;  /* Change color on hover */
         }
+
+        /* Styles for the dropdown */
+        details {
+            border: 1px solid black;
+            margin: 10px 0;
+        }
+
+        summary {
+            padding: 10px;
+            background-color: #967D69;
+            color: white;
+            cursor: pointer;
+        }
+
+        summary:hover {
+            background-color: #7E6959;
+        }
+
     </style>
 </head>
 <body>
-    <!-- List of 100 buttons -->
+    <!-- List of categorized buttons -->
     <div>
-       
-        <a class="full-width-button" href="lessons/Test.html">Button <?= $i ?></a>
-        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
-        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
-        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
-        <a class="full-width-button" href="https://www.example.com">Button <?= $i ?></a>
-       
+        <details>
+            <summary>Category 1</summary>
+            <a class="full-width-button" href="lessons/Test.html">Button 1</a>
+            <a class="full-width-button" href="https://www.example.com">Button 2</a>
+        </details>
+        
+        <details>
+            <summary>Category 2</summary>
+            <a class="full-width-button" href="https://www.example.com">Button 3</a>
+            <a class="full-width-button" href="https://www.example.com">Button 4</a>
+        </details>
+        
+        <details>
+            <summary>Category 3</summary>
+            <a class="full-width-button" href="https://www.example.com">Button 5</a>
+        </details>
     </div>
 </body>
 </html>
