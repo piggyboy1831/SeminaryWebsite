@@ -9,25 +9,35 @@
             background-color: #1B4079;  /* Dark blue background color */
         }
 
-        /* Style for the button */
-        .full-width-button {
+        /* Style for the button container */
+        .button-container {
+            display: flex;
             width: calc(100% - 20px);   /* Full width minus padding */
-            display: block;  /* Display as block to take the full width */
-            padding: 10px;  /* Some padding for better appearance */
-            text-align: center;  /* Center the button text */
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        /* Style for the individual buttons */
+        .button-main, .button-side {
+            padding: 10px;
+            text-align: center;
             background-color: #4D7C8A;  /* Button color */
             color: white;  /* Text color */
             border: none;  /* No border */
-            border-bottom: 1px solid black;
             cursor: pointer;  /* Change cursor to pointer on hover */
             text-decoration: none;  /* Remove underline */
         }
 
-        .full-width-button.first-button {
-            border-top: 1px solid black;
+        .button-main {
+            flex: 80;  /* Take 80% of the container width */
+            border-right: 1px solid black;
         }
 
-        .full-width-button:hover {
+        .button-side {
+            flex: 20;  /* Take 20% of the container width */
+        }
+
+        .button-main:hover, .button-side:hover {
             background-color: #446E7A;  /* Change color on hover */
         }
 
@@ -55,19 +65,34 @@
     <div>
         <details>
             <summary>Category 1</summary>
-            <a class="full-width-button first-button" href="lessons/Test.html">Button 1</a>
-            <a class="full-width-button" href="https://www.example.com">Button 2</a>
+            <div class="button-container">
+                <a class="button-main" href="lessons/Test.html">Main Button 1</a>
+                <a class="button-side" href="lessons/Test.html" download>Side</a>
+            </div>
+            <div class="button-container">
+                <a class="button-main" href="https://www.example.com">Main Button 2</a>
+                <a class="button-side" href="https://www.example.com">Side</a>
+            </div>
         </details>
 
         <details>
             <summary>Category 2</summary>
-            <a class="full-width-button first-button" href="https://www.example.com">Button 3</a>
-            <a class="full-width-button" href="https://www.example.com">Button 4</a>
+            <div class="button-container">
+                <a class="button-main" href="https://www.example.com">Main Button 3</a>
+                <a class="button-side" href="https://www.example.com">Side</a>
+            </div>
+            <div class="button-container">
+                <a class="button-main" href="https://www.example.com">Main Button 4</a>
+                <a class="button-side" href="https://www.example.com">Side</a>
+            </div>
         </details>
 
         <details>
             <summary>Category 3</summary>
-            <a class="full-width-button first-button" href="https://www.example.com">Button 5</a>
+            <div class="button-container">
+                <a class="button-main" href="https://www.example.com">Main Button 5</a>
+                <a class="button-side" href="https://www.example.com">Side</a>
+            </div>
         </details>
     </div>
 </body>
