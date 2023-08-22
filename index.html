@@ -6,8 +6,9 @@
     <title>100 Buttons</title>
     <style>
         body {
-            background-color: #1B4079;  /* Light gray background color */
+            background-color: #1B4079;  /* Dark blue background color */
         }
+
         /* Style for the button */
         .full-width-button {
             width: calc(100% - 20px);   /* Full width minus padding */
@@ -17,10 +18,13 @@
             background-color: #4D7C8A;  /* Button color */
             color: white;  /* Text color */
             border: none;  /* No border */
-            border-top: 1px solid black;
             border-bottom: 1px solid black;
             cursor: pointer;  /* Change cursor to pointer on hover */
             text-decoration: none;  /* Remove underline */
+        }
+
+        .full-width-button.first-button {
+            border-top: 1px solid black;
         }
 
         .full-width-button:hover {
@@ -37,7 +41,6 @@
             padding: 10px;
             background-color: #4D7C8A;
             color: white;
-            
             cursor: pointer;
         }
 
@@ -52,19 +55,19 @@
     <div>
         <details>
             <summary>Category 1</summary>
-            <a class="full-width-button" href="lessons/Test.html">Button 1</a>
+            <a class="full-width-button first-button" href="lessons/Test.html">Button 1</a>
             <a class="full-width-button" href="https://www.example.com">Button 2</a>
         </details>
-        
+
         <details>
             <summary>Category 2</summary>
-            <a class="full-width-button" href="https://www.example.com">Button 3</a>
+            <a class="full-width-button first-button" href="https://www.example.com">Button 3</a>
             <a class="full-width-button" href="https://www.example.com">Button 4</a>
         </details>
-        
+
         <details>
             <summary>Category 3</summary>
-            <a class="full-width-button" href="https://www.example.com">Button 5</a>
+            <a class="full-width-button first-button" href="https://www.example.com">Button 5</a>
         </details>
     </div>
 </body>
