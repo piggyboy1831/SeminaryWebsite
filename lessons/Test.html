@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subpage Title</title>
     <style>
+        body {
+            background-color: #1B4079;  /* Dark blue background color */
+        }
+
         /* Style for the back button */
         .back-button {
-            width: 100%;
+            width: calc(100% - 20px);   /* Full width minus padding */
             display: block;
-            margin: 5px 0;
             padding: 10px;
             text-align: center;
-            background-color: #959595;
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
+            background-color: #4D7C8A;  /* Button color from main page */
+            color: white;  /* Text color */
+            border: none;  /* No border */
+            border-top: 1px solid #446E7A;  /* Border color from main page */
+            border-bottom: 1px solid #446E7A;  /* Border color from main page */
+            cursor: pointer;  /* Change cursor to pointer on hover */
+            text-decoration: none;  /* Remove underline */
+            box-sizing: border-box; /* To include border and padding in element's total width and height */
         }
 
         .back-button:hover {
-            background-color: #606060;
+            background-color: #6A9BAD;  /* Lighter shade for hover */
         }
 
         /* Style for the paragraph */
         .content-text {
             margin: 20px;
             font-size: 16px;
+            color: white; /* Adjusting the text color to be visible on the dark background */
         }
     </style>
 </head>
 <body>
     <!-- Button to go back to the main page (index.html) -->
     <a class="back-button" href="../index.html">Back to Main Page</a> 
-    <a class="back-button" href="../index.html" download>Back to Page</a> 
     <!-- Paragraph of text -->
     <div class="content-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
