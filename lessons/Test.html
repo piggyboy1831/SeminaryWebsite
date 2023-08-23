@@ -8,57 +8,79 @@
         body {
             background-color: #1B4079;  /* Dark blue background color */
         }
-
-        /* Style for the back button */
-        .back-button {
+        .back-button, .resource-section {
             width: calc(100% - 20px);   /* Full width minus padding */
-            display: block;
             padding: 10px;
+            color: white;  /* Text color */
+            box-sizing: border-box; /* To include border and padding in element's total width and height */
+        }
+        .back-button {
+            display: block;
             text-align: center;
             background-color: #4D7C8A;  /* Button color from main page */
-            color: white;  /* Text color */
             border: none;  /* No border */
             border-top: 1px solid #446E7A;  /* Border color from main page */
             border-bottom: 1px solid #446E7A;  /* Border color from main page */
             cursor: pointer;  /* Change cursor to pointer on hover */
             text-decoration: none;  /* Remove underline */
-            box-sizing: border-box; /* To include border and padding in element's total width and height */
         }
-
         .back-button:hover {
             background-color: #6A9BAD;  /* Lighter shade for hover */
         }
-
-        /* Style for the paragraph */
         .content-text {
             margin: 20px;
             font-size: 16px;
-            color: white; /* Adjusting the text color to be visible on the dark background */
         }
-
-        /* Style for the link */
         .content-link {
             color: #6A9BAD; /* Making the link color readable on the dark background */
             text-decoration: underline; /* Adding underline for better distinction */
         }
-
         .content-link:hover {
             color: white; /* Lighter color on hover */
         }
-
+        .resource-section {
+            margin-top: 10px;
+            background-color: #4D7C8A;
+        }
+        .resource-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
     <!-- Button to go back to the main page (index.html) -->
-    <a class="back-button" href="../index.html">Back to Main Page</a> 
+    <a class="back-button" href="../index.html">Back to Main Page</a>
+
+    <!-- Resources Section -->
+    <!-- Text Resources -->
+    <div class="resource-section">
+        <div class="resource-title">Text Resources:</div>
+        <a class="content-link" href="path-to-text-resource" target="_blank">Download Text</a>
+    </div>
+
+    <!-- Video Resources -->
+    <div class="resource-section">
+        <div class="resource-title">Video Resources:</div>
+        <a class="content-link" href="path-to-video-resource-high" target="_blank">Download Video High Quality</a>
+        <br>
+        <a class="content-link" href="path-to-video-resource-low" target="_blank">Download Video Low Quality</a>
+    </div>
+
+    <!-- Image Resources -->
+    <div class="resource-section">
+        <div class="resource-title">Image Resources:</div>
+        <a class="content-link" href="path-to-image-resource" target="_blank">Download Image</a>
+    </div>
+
+    <!-- PowerPoint Resources -->
+    <div class="resource-section">
+        <div class="resource-title">PowerPoint Resources:</div>
+        <a class="content-link" href="path-to-powerpoint-resource" target="_blank">Download PowerPoint</a>
+    </div>
+
     <!-- Paragraph of text -->
     <div class="content-text">
-        <a class="content-link" href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-cor/15?lang=eng&id=p13-p28#p13" target="_blank">Read scriptures here</a>
-        <br>
-        <a class="content-link" href="https://media2.ldscdn.org/assets/general-conference/april-2018-general-conference/2018-04-5060-dieter-f-uchtdorf-720p-eng.mp4?download=true" target="_blank">Download video high</a>
-                <a class="content-link" href="https://media2.ldscdn.org/assets/general-conference/april-2018-general-conference/2018-04-5060-dieter-f-uchtdorf-360p-eng.mp4?download=true" target="_blank">Download video low</a>
-
-        
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
     </div>
 </body>
